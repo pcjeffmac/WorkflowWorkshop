@@ -59,7 +59,7 @@ workflow:
       description: Checks if order service is still running correctly after feature flag
       action: dynatrace.automations:http-function
       input:
-        url: http://REPLACE_WITH_URL/credit-card-order-service/v1/orders/5/status/latest
+        url: http://crispy-sniffle-97rpxpg7764fppjp-30100.app.github.dev/credit-card-order-service/v1/orders/5/status/latest
         method: GET
         headers:
           Accept: application/json
@@ -78,7 +78,7 @@ workflow:
       description: Issue an HTTP request to any API
       action: dynatrace.automations:http-function
       input:
-        url: http://REPLACE_WITH_URL/feature-flag-service/v1/flags/credit_card_meltdown
+        url: http://crispy-sniffle-97rpxpg7764fppjp-30100.app.github.dev/feature-flag-service/v1/flags/credit_card_meltdown
         method: PUT
         headers:
           accept: application/json
@@ -101,7 +101,7 @@ workflow:
       description: Sends request to FF API
       action: dynatrace.automations:http-function
       input:
-        url: http://REPLACE_WITH_URL/feature-flag-service/v1/flags/credit_card_meltdown
+        url: http://crispy-sniffle-97rpxpg7764fppjp-30100.app.github.dev/feature-flag-service/v1/flags/credit_card_meltdown
         method: PUT
         headers:
           accept: application/json
